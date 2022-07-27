@@ -12,7 +12,7 @@ const App = observer(() => {
   useEffect(() => {
     setTimeout(() => {
       themeStore.setMode(false);
-    }, 5000);
+    }, 50000);
   }, []);
 
   return (

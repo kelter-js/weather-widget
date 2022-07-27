@@ -2,6 +2,7 @@ import { makeAutoObservable } from "mobx";
 
 class MainStore {
   location = {};
+  city = "";
 
   constructor() {
     makeAutoObservable(this);
@@ -11,8 +12,12 @@ class MainStore {
     return Object.keys(this.location).length !== 0;
   };
 
-  setLocation (location) {
+  setLocation(location) {
     this.location = location;
+  };
+
+  setCity(city) {
+    this.city = city;
   };
 };
 

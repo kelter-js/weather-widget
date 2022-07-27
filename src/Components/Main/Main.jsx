@@ -11,8 +11,6 @@ const Main = observer(({ children }) => {
     });
   };
 
-  console.log(MainStore)
-
   useEffect(() => {
     if (Object.keys(window.navigator.geolocation).length !== 0) {
       setCoords(window.navigator.geolocation)
