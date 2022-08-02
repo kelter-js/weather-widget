@@ -7,6 +7,7 @@ import Main from "./Components/Main/Main";
 import MainStore from "./store/MainStore";
 import Map from "./Components/Map/MapContainer";
 import SearchBar from "./Components/SearchBar/SearchBar";
+import LocationData from "./Components/LocationData/LocationData";
 
 const StyledApp = observer(({ theme }) => {
   return (
@@ -29,6 +30,7 @@ const StyledApp = observer(({ theme }) => {
             autocomplete="off"
           />
           <Map />
+          <LocationData />
         </Container>
       </Main>
     </ThemeProvider>
