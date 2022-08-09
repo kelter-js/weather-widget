@@ -4,9 +4,18 @@ class MainStore {
   location = {};
   city = "";
   locationData = "";
+  weatherData = null;
 
   constructor() {
     makeAutoObservable(this);
+  };
+
+  setWeatherData(data) {
+    this.weatherData = data;
+  };
+
+  get weatherDataFilled() {
+    return this.weatherData;
   };
 
   get locationSelected() {

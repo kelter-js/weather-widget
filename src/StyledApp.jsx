@@ -8,6 +8,7 @@ import MainStore from "./store/MainStore";
 import Map from "./Components/Map/MapContainer";
 import SearchBar from "./Components/SearchBar/SearchBar";
 import LocationData from "./Components/LocationData/LocationData";
+import WeatherDisplay from "./Components/WeatherDisplay/WeatherDisplay";
 
 const StyledApp = observer(({ theme }) => {
   return (
@@ -29,8 +30,9 @@ const StyledApp = observer(({ theme }) => {
             placeholder="Somewhere in Russia"
             autocomplete="off"
           />
-          <Map />
           <LocationData />
+          <WeatherDisplay />
+          <Map />
         </Container>
       </Main>
     </ThemeProvider>

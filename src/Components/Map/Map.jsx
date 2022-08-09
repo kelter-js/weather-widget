@@ -14,16 +14,16 @@ const Map = observer(({ coords }) => {
     prefabCoordinates.lat = +prefabCoordinates.lat;
   }
 
-  useEffect(() => { 
+  useEffect(() => {
     axios
-    .get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${coords.lat},${coords.lng}&sensor=true&key=AIzaSyDJkD4mUKMBXM5WU61f3N415kJznUCQGys`)
-    .then((res) => {
-      MainStore.setLocationData(res.data.results[0].formatted_address);
-    })
+      .get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${coords.lat},${coords.lng}&sensor=true&key=AIzaSyDJkD4mUKMBXM5WU61f3N415kJznUCQGys`)
+      .then((res) => {
+        MainStore.setLocationData(res.data.results[0].formatted_address);
+      })
   }, [coords]);
 
   return (
-    <div style={{ height: '40vh', width: '100%', gridRow: "-1/-1", gridColumn: "2 / 3" }}>
+    <div style={{ height: '40vh', width: '100%', gridRow: "2 / 3", gridColumn: "2 / 3" }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyDJkD4mUKMBXM5WU61f3N415kJznUCQGys" }}
         center={prefabCoordinates}
