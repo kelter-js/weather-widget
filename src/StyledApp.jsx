@@ -9,6 +9,7 @@ import Map from "./Components/Map/MapContainer";
 import SearchBar from "./Components/SearchBar/SearchBar";
 import LocationData from "./Components/LocationData/LocationData";
 import WeatherDisplay from "./Components/WeatherDisplay/WeatherDisplay";
+import SwitchMode from "./Common/SwitchMode";
 
 const StyledApp = observer(({ theme }) => {
   return (
@@ -16,6 +17,7 @@ const StyledApp = observer(({ theme }) => {
       <GlobalStyles />
       <Main>
         <Container>
+        <SwitchMode />
           <SearchBar
             value={MainStore.city ? MainStore.city : ""}
             label="Your location"

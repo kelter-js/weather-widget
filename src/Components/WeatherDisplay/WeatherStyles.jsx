@@ -5,6 +5,7 @@ export const DisplayContainer = styled.div`
   grid-column: 2 / 3;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 35px;
 `;
 
 export const CardContainer = styled.div`
@@ -13,19 +14,12 @@ export const CardContainer = styled.div`
   justify-content: stretch;
   align-items: center;
   flex: 1;
-  flex-basis: 20%;
-  margin-right: 30px;
+  margin-right: 15px;
   text-align: center;
   border: 2px solid #d3d3d3;
   border-radius: 0.3rem;
 
-  &:nth-child(4) {
-    margin-right: 0px;
-  }
-
   &:last-child {
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
+    margin-right: 0px;
   }
 `;

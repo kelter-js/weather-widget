@@ -1,7 +1,9 @@
 import { makeAutoObservable } from "mobx";
 
+export const getMode = localStorage.getItem('darkMode');
+
 class ThemeModeStore {
-  mode = 'dark';
+  mode = !!getMode ? 'dark' : 'light'
 
   constructor() {
     makeAutoObservable(this);

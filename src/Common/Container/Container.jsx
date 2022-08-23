@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content;

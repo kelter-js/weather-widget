@@ -83,7 +83,7 @@ const SearchBar = observer(({
   };
 
   return (
-    <div style={{ gridRow: "1 / 2", gridColumn: "1 / 2" }}>
+    <div style={{ gridRow: "1 / 2", gridColumn: "1 / 2", marginTop: 10 }}>
       <TextLabel data-testid="input-place-component">
         <TextLabelName>{label}</TextLabelName>
         <Input value={value} onChange={onPlaceChange} {...restProps} />
