@@ -54,7 +54,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 
 const SwitchMode = observer(() => {
-  const [checked, setChecked] = useState(!!getMode)
+  const [checked, setChecked] = useState(!!getMode);
 
   const changeMode = (e) => {
     const value = e.target.checked;
@@ -63,7 +63,7 @@ const SwitchMode = observer(() => {
   };
 
   return (
-    <FormGroup style={{ position: "absolute", top: 0, left: 0 }}>
+    <FormGroup style={{ position: "absolute", top: 4, left: 0 }}>
       <MaterialUISwitch
         checked={checked}
         onChange={e => changeMode(e)}

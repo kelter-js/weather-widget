@@ -18,7 +18,7 @@ export const TextLabel = styled.label`
       font-size: 10px;
     }
   }
-`
+`;
 
 export const TextLabelName = styled.p`
   margin: 0 0 6px 0;

@@ -7,13 +7,7 @@ import themeStore from './store/themeStore';
 import StyledApp from "./StyledApp";
 
 const App = observer(() => {
-  const theme = createTheme(getTheme(themeStore.mode));
-
-  useEffect(() => {
-    setTimeout(() => {
-      themeStore.setMode(false);
-    }, 50000);
-  }, []);
+  const theme = createTheme(getTheme(themeStore.mode)); 
 
   return (
     <ThemeProvider theme={theme}>

@@ -1,14 +1,15 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
 import MainStore from "../../store/MainStore";
+import LocationContainer from "./LocationContainer";
 
 const LocationData = observer((props) => {
   return (
-    <div style={{ gridRow: "2 / 3", gridColumn: "1 / 2" }}>
+    <LocationContainer>
       <p>
         Your current approximate location is: {MainStore.locationData}
       </p>
-    </div>
+    </LocationContainer>
   );
 });
 
